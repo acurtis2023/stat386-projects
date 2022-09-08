@@ -4,7 +4,7 @@ title:  "My First Blog Post"
 date:   2022-09-13
 author: Aubree Curtis
 description: Short yet informative description
-image: /assets/images/blog-image.jpg
+image: /assets/images/alta.jpg
 ---
 
 # Big Heading
