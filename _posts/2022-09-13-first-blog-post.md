@@ -21,6 +21,7 @@ image: /assets/images/blog-image.jpg
 <br>
 
 Here is a picture from my family's recent trip to Alaska:
+
 ![Alaska](/assets/images/alaska.jpg)
 
 <br>
