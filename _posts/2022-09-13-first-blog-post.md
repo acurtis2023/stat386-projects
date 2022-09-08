@@ -7,19 +7,41 @@ description: Short yet informative description
 image: /assets/images/blog-image.jpg
 ---
 
-# Heading
+# Big Heading
 
-## bigger heading
+## Smaller heading
 
-### even bigger heading
+<br>
 
-Fun Facts about Me:
-* I'm working as a Data Analyst at Pluralsight once I graduate
-* I've been to all 50 states
-* My favorite artist to see in concert is John Mayer
+### Fun Facts about Me
+* I'm working as a Data Analyst at Pluralsight this summer after I graduate
+* I've been to **all 50 states**
+* My favorite artist to see in concert is *John Mayer*
+
+<br>
 
 Here is a picture from my family's recent trip to Alaska:
 ![Alaska](assets/images/alaska.jpg)
+
+<br>
+
+### Git
+Here are some common git commands:
+
+`git status`
+
+`git commit -m "message"`
+
+`git log`
+
+
+<br><br>
+
+### The End
+> Really inspiring quote goes here
+
+
+
 
 
 
