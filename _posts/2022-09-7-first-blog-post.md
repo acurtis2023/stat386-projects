@@ -21,7 +21,7 @@ image: /assets/images/alta.jpg
 
 Here is a picture from my family's recent trip to Alaska:
 
-![Alaska](/assets/images/alaska.jpg)
+![Alaska](https://github.com/acurtis2023/stat386-projects/raw/main/assets/images/alaska.jpg)
 
 <br>
 
