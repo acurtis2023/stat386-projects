@@ -18,10 +18,12 @@ If you are generating a report that contains the findings gathered from external
 
 In the options portion of your R chunk (denoted by a series of three backtics), simply include ```{r setup, include = FALSE}```. The `setup` argument tells RMarkdown to run that chunk first, even if it isn't first in the markdown, while the `include = FALSE` argument insures that the chunk will not be knitted in your final output, whether it be *.html, .pdf, .doc, etc.*
 
-![Hiding Setup](https://github.com/acurtis2023/stat386-projects/blob/main/assets/images/step1_blogtut.png)
+![Hiding Setup](https://raw.githubusercontent.com/acurtis2023/stat386-projects/main/assets/images/step1_blogtut.png)
+
+### 2. Folding Code Chunks
 
 
-### 2. Positioning Plots
+### 3. Positioning Plots
 
 
 
