@@ -20,11 +20,11 @@ In the options portion of your R chunk (denoted by a series of three backtics), 
 
 ![Hiding Setup](https://raw.githubusercontent.com/acurtis2023/stat386-projects/main/assets/images/step1_blogtut.png)
 
-Anything else included in this code chunk, such as data cleaning techniques or otherwise irrelevant calculations, will be accessible when viewing the raw version of your file, but will not be accessible to those viewing the knitted report, ensuring that sensitive information is properly redacted.
+Any sort of data manipulation or set-up features that aren't necessary for the comprehension of your report are best off going in this chunk. This way, you can refer back to it in the raw file of the report, but the knitted version won't contain any unnecessary or potentially sensitive information.
 
 ### **2. Folding Code Chunks**
 
-While the ```include = FALSE``` command is helpful for removing code entirely from your report, it's possible that you may want to still provide the raw code to your 
+While your report may not have sensitive information, you still might want to make your report a bit more cohesive without your readers having to scroll through lines of raw code. While you could use the above code from earlier, you may want to still provide readers with the option to see what code you used to create visualizations or complicated calculations. This can be done by **folding your code chunks**
 
 
 ### **3. Positioning Plots**
