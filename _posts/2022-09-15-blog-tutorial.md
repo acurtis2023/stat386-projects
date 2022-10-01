@@ -34,7 +34,8 @@ The resulting output when knitting the file will have a button in the top right 
 
 ![Folding Code](https://raw.githubusercontent.com/acurtis2023/stat386-projects/main/assets/images/Screen%20Shot%202022-09-30%20at%2010.32.48%20PM.png)
 
-![Code Button](https://raw.githubusercontent.com/acurtis2023/stat386-projects/main/assets/images/Screen%20Shot%202022-09-30%20at%2010.32.48%20PM.png)
+![Code Button](https://raw.githubusercontent.com/acurtis2023/stat386-projects/main/assets/images/Screen%20Shot%202022-09-30%20at%2010.42.00%20PM.png)
+
 
 
 ### **3. Positioning Plots**
