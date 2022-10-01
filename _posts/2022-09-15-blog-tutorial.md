@@ -3,7 +3,7 @@ layout: post
 title:  "3 Easy RMarkdown Customization Tools"
 author: Aubree Curtis
 description: Learn some quick techniques to personalize your knitted Rmarkdown layout!
-image: /assets/images/report.jpeg
+image: /assets/images/Screen Shot 2022-09-30 at 8.51.57 PM.png
 ---
 
 If you've ever taken a data science course or worked as a data science intern, you have probably been asked to generate a statistical report at some point. While there are several methods to choose from, it's likely that you've explored using a **Markdown Editor**, a lightweight text-to-HTML conversion tool. While IDEs such as RStudio typically provide simple tutorials for how to set up a markdown, there are a variety of other customization tools available in order to make your report look more professional *(and potentially easier on the eyes!)*. 
@@ -24,7 +24,7 @@ Any sort of data manipulation or set-up features that aren't necessary for the c
 
 ### **2. Folding Code Chunks**
 
-While your report may not have sensitive information, you still might want to make your report a bit more cohesive without your readers having to scroll through lines of raw code. While you could use the above code from earlier, you may want to still provide readers with the option to see what code you used to create visualizations or complicated calculations. This can be done by **folding your code chunks**
+While your report may not have sensitive information, you still might want to make your report a bit more cohesive without your readers having to scroll through lines of raw code. While you could use the above code from earlier, you may want to still provide readers with the option to see what code you used to create visualizations or complicated calculations. This can be done by **folding your code chunks**, which will hide your code by default unless a reader specifically requests to view the syntax. 
 
 
 ### **3. Positioning Plots**
