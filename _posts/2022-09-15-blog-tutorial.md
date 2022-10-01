@@ -26,6 +26,16 @@ Any sort of data manipulation or set-up features that aren't necessary for the c
 
 While your report may not have sensitive information, you still might want to make your report a bit more cohesive without your readers having to scroll through lines of raw code. While you could use the above code from earlier, you may want to still provide readers with the option to see what code you used to create visualizations or complicated calculations. This can be done by **folding your code chunks**, which will hide your code by default unless a reader specifically requests to view the syntax. 
 
+Markdown files traditionally contain a YAML header that specify how to format and style the outputted file. This is where you will include information such as the title of the report, author, and what file extension to append to the report (.html, .pdf, etc.). 
+
+When specifying output as an html document, simply add an additional line stating `code_folding: hide` to default all code to a hidden state when rendering the document.
+
+The resulting output when knitting the file will have a button in the top right corner where you can choose to hide or show code throughout the report.
+
+![Folding Code](https://raw.githubusercontent.com/acurtis2023/stat386-projects/main/assets/images/Screen%20Shot%202022-09-30%20at%2010.32.48%20PM.png)
+
+![Code Button](https://raw.githubusercontent.com/acurtis2023/stat386-projects/main/assets/images/Screen%20Shot%202022-09-30%20at%2010.32.48%20PM.png)
+
 
 ### **3. Positioning Plots**
 
