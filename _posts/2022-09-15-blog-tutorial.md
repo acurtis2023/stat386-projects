@@ -2,7 +2,7 @@
 layout: post
 title:  "3 Easy RMarkdown Customization Tools"
 author: Aubree Curtis
-description: Learn some quick techniques to personalize your knitted Rmarkdown layout!
+description: Learn some quick techniques to optimize your knitted Rmarkdown layout!
 image: /assets/images/Screen Shot 2022-09-30 at 8.51.57 PM.png
 ---
 
@@ -30,15 +30,29 @@ Markdown files traditionally contain a YAML header that specify how to format an
 
 When specifying output as an html document, simply add an additional line stating `code_folding: hide` to default all code to a hidden state when rendering the document.
 
-The resulting output when knitting the file will have a button in the top right corner where you can choose to hide or show code throughout the report.
-
 ![Folding Code](https://raw.githubusercontent.com/acurtis2023/stat386-projects/main/assets/images/Screen%20Shot%202022-09-30%20at%2010.32.48%20PM.png)
+
+The resulting output when knitting the file will have a button in the top right corner where you can choose to hide or show code throughout the report.
 
 ![Code Button](https://raw.githubusercontent.com/acurtis2023/stat386-projects/main/assets/images/Screen%20Shot%202022-09-30%20at%2010.42.00%20PM.png)
 
+### **3. Suppressing Messages & Positioning Plots**
 
+Have you ever tried displaying data in a report, only for it to either be 1) way too large (or small, or off-centered), or 2) displaying messages that are irrelevant to your findings? Thankfully, Markdown has some pretty simple customizable features that solve this problem.
 
-### **3. Positioning Plots**
+The main arguments that you will want to implement on a regular basis in your options chunks are `warning = FALSE` and `message = FALSE`. Many languages such as R have built-in dialogue to inform you of potential data integrity issues, such as picking better binwidths for graphs, or points being excluded in a visualization range. However, even if you have your code chunks set to fold upon knitting, these warnings won't be suppressed when you knit them to your final report unless you explicitly remove them.
+
+Markdown also allows you to specify the size and placement of your plots when they output. These changes won't be reflected when viewing them in the raw file format, but they are implemented in the same place as everything else -- within your options chunk. 
+
+Specify plot width and height using `out.width = "XX%"` and `out.height = "XX%"`. This will allow you to fit your plot based on the width of the report, so experiment with the sizing to see what looks best in y our final output. I like to go with a good old 75% for both height and width so it doesn't feel like it's invading my report, but find what size works best for you! And of course, if you want to make sure your plot is centered, simply add `fig.align = 'center'`
+
+***
+
+If you found these tricks to be helpful, I encourage checking out the official [RStudio Blog](https://www.rstudio.com/blog/)! Among several topics ranging from data analytics to package development is a series focused specifically on providing lesser-known Markdown tips and tricks. [Here](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/) is the first article of their 4-part series!
+
+<br>
+
+Stay tuned for more data science tips, tricks, and techniques!
 
 
 
