@@ -46,7 +46,11 @@ Markdown also allows you to specify the size and placement of your plots when th
 
 Specify plot width and height using `out.width = "XX%"` and `out.height = "XX%"`. This will allow you to fit your plot based on the width of the report, so experiment with the sizing to see what looks best in y our final output. I like to go with a good old 75% for both height and width so it doesn't feel like it's invading my report, but find what size works best for you! And of course, if you want to make sure your plot is centered, simply add `fig.align = 'center'`
 
+<br>
+
 ***
+
+<br>
 
 If you found these tricks to be helpful, I encourage checking out the official [RStudio Blog](https://www.rstudio.com/blog/)! Among several topics ranging from data analytics to package development is a series focused specifically on providing lesser-known Markdown tips and tricks. [Here](https://www.rstudio.com/blog/r-markdown-tips-tricks-1-rstudio-ide/) is the first article of their 4-part series!
 
