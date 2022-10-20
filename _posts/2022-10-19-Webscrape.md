@@ -125,6 +125,8 @@ This blog was mostly just to demonstrate how I (legally and ethically) obtained 
 
 If you want to see the code that I utilized for this project in more detail, [here](https://github.com/acurtis2023/Spotify_Scrape) is the link to my github repository where I have my .json files (except for the one with my private key) and a commented .ipynb python file!
 
+[This link](https://spotipy.readthedocs.io/en/master/) also walks through some other fun things that you can do with the `spotipy` package, such as pulling album lists and even album covers!s
+
 Happy coding!
 
 
