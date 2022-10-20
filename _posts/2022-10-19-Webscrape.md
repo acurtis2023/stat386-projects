@@ -30,7 +30,6 @@ Once I had my credentials, I just needed to get the URI for the playlist I wante
 
 Once I got the URI, Python (thankfully) has a relatively lightweight package called "Spotipy" that helps decipher the music data accessible from the Spotify Web API.
 
-![Spotipy](https://raw.githubusercontent.com/acurtis2023/stat386-projects/main/assets/images/credentials.png)
 
 
 
