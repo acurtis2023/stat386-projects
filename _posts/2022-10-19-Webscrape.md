@@ -111,6 +111,13 @@ features = sp.audio_features(playlist_tracks_id)
 
 From here, I created a `pandas` dataframe that combined the audio features and playlists tracks into one dataset!
 
+![data](https://raw.githubusercontent.com/acurtis2023/stat386-projects/main/assets/images/precleaned_table.png)
+
+### Final Touches
+
+For this project, I decided to only include features that I thought were the most interesting and interpretable. After removing these (along with the redundant 'artist' column) and converting some columns to be more interpretable (I will figure out how to convert 'duration' from integer to mm:ss format another day, lol), this is what my dataset ended up looking like!
+
+![final]()
 
 
 
