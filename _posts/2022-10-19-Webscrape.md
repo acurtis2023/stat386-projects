@@ -117,7 +117,15 @@ From here, I created a `pandas` dataframe that combined the audio features and p
 
 For this project, I decided to only include features that I thought were the most interesting and interpretable. After removing these (along with the redundant 'artist' column) and converting some columns to be more interpretable (I will figure out how to convert 'duration' from integer to mm:ss format another day, lol), this is what my dataset ended up looking like!
 
-![final]()
+![final](https://raw.githubusercontent.com/acurtis2023/stat386-projects/main/assets/images/final_table.png)
+
+### Conclusion
+
+This blog was mostly just to demonstrate how I (legally and ethically) obtained an API to source data of interest to me! In my next blog post, I will dive deeper into this data and actually use it to answer questions! Are you curious to know the "danceability" of the average John Mayer song? Or perhaps you're curious to know how positive or negative his lyrics are, on average? If so, check out my Exploratory Data Analysis, coming soon!
+
+If you want to see the code that I utilized for this project in more detail, [here](https://github.com/acurtis2023/Spotify_Scrape) is the link to my github repository where I have my .json files (except for the one with my private key) and a commented .ipynb python file!
+
+Happy coding!
 
 
 
