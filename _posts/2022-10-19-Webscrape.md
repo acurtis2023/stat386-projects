@@ -34,13 +34,28 @@ Once I had my credentials, I just needed to get the URI for the playlist I wante
 
 <br>
 
-Once I got the URI, Python (thankfully) has a relatively lightweight package called "Spotipy" that helps decipher the music data accessible from the Spotify Web API. For organizational and security purposes, I saved my client keys and URI in separate json files and called those rather than typing them directly. 
+Once I got the URI, Python (thankfully) has a relatively lightweight package called `Spotipy` that helps decipher the music data accessible from the Spotify Web API. For organizational and security purposes, I saved my client keys and URI in separate json files and called those rather than typing them directly. If you decide to take this route (which is recommended if you will be publishing code in a repository, etc.), you'll want to import the `json` package as well. 
 
-![spotipy](https://raw.githubusercontent.com/acurtis2023/stat386-projects/main/assets/images/spotipy.png)
+```
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+import json
+
+# access my json file and assign my private client credentials
+credentials = json.load(open('authorization.json')) 
+client_id = credentials['client_id']
+client_secret = credentials['client_secret']
+
+
+# access my json file with the playlist uri from my John Mayer playlist
+playlist_index = 0
+playlists = json.load(open('playlists.json'))
+playlist_uri = playlists[playlist_index]['uri']
+```
 
 <br>
 
-From here, I called my client credentials with these two lines of code:
+From here, I assigned my client credentials via spotipy with these two lines of code:
 ```
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id,client_secret=client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
