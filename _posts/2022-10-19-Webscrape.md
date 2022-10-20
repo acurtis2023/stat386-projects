@@ -20,8 +20,7 @@ Thankfully, Spotify has a free [Web API](https://developer.spotify.com/documenta
 
 I won't go super into detail on this process, but if you want to try it on  your own, Spotify has a [quick start guide](https://developer.spotify.com/documentation/web-api/quick-start/) that provides more instruction. 
 
-**NOTE**
-One significant aspect of the Spotify Web API is that it only allows scrapes of up to 100 tracks per session. While there may be ways to work around this in a convoluted way, for purposes of this assignment I had permission from Dr. Tass to just focus on the scrape from a singular session. John Mayer has several studio and live albums, which makes his total track list exceed 100 songs. To account for this, I created a playlist of just his studio albums, and used the last couple of indeces to add a few of my favorite live recordings. So while it's not John Mayer's *entire* discography, it's pretty close. 
+**NOTE:** One significant aspect of the Spotify Web API is that it only allows scrapes of up to 100 tracks per session. While there may be ways to work around this in a convoluted way, for purposes of this assignment I had permission from Dr. Tass to just focus on the scrape from a singular session. John Mayer has several studio and live albums, which makes his total track list exceed 100 songs. To account for this, I created a playlist of just his studio albums, and used the last couple of indeces to add a few of my favorite live recordings. So while it's not John Mayer's *entire* discography, it's pretty close. 
 
 ### So I got the API, now what?
 
