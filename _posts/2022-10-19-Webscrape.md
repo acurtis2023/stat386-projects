@@ -8,11 +8,11 @@ image: "/assets/images/john-mayer.jpeg"
 
 John Mayer has got to be one of my favorite artists of all time -- I've seen him in concert 6 times, gone to concerts in 3 different states, and I've got a joint playlist with my mom that shares our top favorite songs. 
 
-Are there certain aspects of John Mayer's artistry that make me so prone to enjoying his music? In today's digital world of music, there are a lot of specially-calculated metrics that define a song -- can I come up with a statistically-backed explanation as to why I like his music? Do all of his songs follow similar patterns and trends in terms of style, key signature, length, etc.?
+Are there certain aspects of John Mayer's artistry that make me so prone to enjoying his music? In today's digital world of music, there are a lot of specially-calculated metrics that define a song -- can I come up with a statistically-backed explanation as to why I like his music the most? Do all of his songs follow similar patterns and trends in terms of style, key signature, length, etc.?
 
 In order to get a closer look at his music (and to find data for my project that was interesting to me and not too trivial), I decided to try and scrape John Mayer's discography off of Spotify!
 
-### *Hold on, you can legally scrape off of Spotify??*
+### *Hold on, you can legally scrape data from Spotify??*
 
 Spotify is one of the largest, if not the largest, music streaming service providers in the world. Surely a billion-dollar company such as Spotify has numerous hoops that one has to jump through in order to legally access its data, right?
 
@@ -61,9 +61,57 @@ client_credentials_manager = SpotifyClientCredentials(client_id=client_id,client
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 ```
 
-### Time to scrape
+### The actual scraping part
 
-Now that I'm certified, its time to grab the actual data -- aka the fun stuff. 
+Once I was certified, it was time to grab the actual data -- aka the fun stuff. 
+
+Before I scraped anything, I needed to understand what exactly I would be scraping. That sounds dumb, but it really was just that. I realized that I would ultimately need to scrape two "tables" of data: one table with the track id's, titles, and artist(s), and one table with the feature information relevant to those tracks. 
+
+To access the basic track information, I directly accessed my URI and stored the username and id for use in the spotipy function called `user_playlist()`. From here, I created empty sets that would populate the track and artist information. The artist information is a bit redundant in this case since my playlist is just John Mayer, but if I wanted to change the URI in my json file to a different playlist, this allows my code to still work!
+
+```
+results = sp.user_playlist(username, playlist_id, 'tracks')
+
+# create empty sets for playlist track ids, artists, etc.
+
+playlist_tracks_data = results['tracks']
+playlist_tracks_id = []
+playlist_tracks_titles = []
+playlist_tracks_artists = []
+
+
+# grab track, name, and artist contained in playlist
+
+for track in playlist_tracks_data['items']:
+    playlist_tracks_id.append(track['track']['id'])
+    playlist_tracks_titles.append(track['track']['name'])
+    # adds a list of all artists involved in the song to the list of artists for the playlist
+    # (I don't really need this for this playlist since it's all John Mayer, but its good for reproducibility)
+    artist_list = []
+    for artist in track['track']['artists']:
+        artist_list.append(artist['name'])
+    playlist_tracks_artists.append(artist_list)
+
+```
+
+To access more in-depth information, I found another link on [Spotify's Developer Website](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-several-audio-features) that defines a variety of audio features that are accessible through `spotipy`. Below are some notable features listed on their site:
+
+* *Danceability: describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.*
+* *duration_ms: the duration of a track in miliseconds*
+* *Tempo: The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.*
+* *Valence: A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).*
+
+Luckily, these can all be accessed using just one line of code!
+
+```
+# grab audio features for playlist
+
+features = sp.audio_features(playlist_tracks_id)
+```
+
+From here, I created a `pandas` dataframe that combined the audio features and playlists tracks into one dataset!
+
+
 
 
 
