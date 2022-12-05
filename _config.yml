@@ -22,7 +22,8 @@ title: Data Science Blog # Make a title for your blog
 email: acurtis2001@hotmail.com # Add your email 
 description: >- # this means to ignore newlines until "baseurl:"
  Welcome to my blog! I am a senior studying Applied Statistics & Analytics at BYU, and I have created
- this blog for my STAT386 class!
+ this blog as a way to explore data science concepts! Feel free to code along with me as I dive into the
+ excitement of webscraping, data wrangling, and exploratory data analysis!
 baseurl: "/stat386-projects" # keep this the same or change it to the name of the repository 
 url: "https://acurtis2023.github.io" #  change this to "https://<your-github-username>.github.io"
 image: "assets/images/alta.jpg"
