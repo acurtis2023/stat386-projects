@@ -26,7 +26,7 @@ What I found interesting about this album is that its valence score (indicating 
 
 ### Overall
 
-Of course, there are several other directions I could have gone with this dataset besides just looking at John Mayer's most popular albums. If you're curious to see what else I designed using this data (such as his *least* popular album), I created two interactive dashboards that showcase audio features for every [album]https://public.tableau.com/app/profile/aubree.curtis/viz/JohnMayerAlbums/AllAlbums#1, as well as every [track]https://public.tableau.com/app/profile/aubree.curtis/viz/JMTrackInfo/AllSongs?publish=yes on those albums!
+Of course, there are several other directions I could have gone with this dataset besides just looking at John Mayer's most popular albums. If you're curious to see what else I designed using this data (such as his *least* popular album), I created two interactive dashboards that showcase audio features for every [album](https://public.tableau.com/app/profile/aubree.curtis/viz/JohnMayerAlbums/AllAlbums#1), as well as every [track](https://public.tableau.com/app/profile/aubree.curtis/viz/JMTrackInfo/AllSongs?publish=yes) on those albums!
 
 As promised, my entire project is contained within [this github repository](https://github.com/acurtis2023/Spotify_Scrape), which includes the scripts I used to scrape tracks off of spotify, clean the data, and create an exploratory data analysis. 
 
